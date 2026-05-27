@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    ]<style>
+        .product{
+            border: 2px solid black;
+            width: 250px;
+            text-align: center;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgb(44,5, 5);
+            /*box-shadow:X axis Y axis  SPread-Radius colour;*/
+            box-shadow:   2px     4px   8px  rgb(44,5, 5);
+
+        }
+        .product:hover{
+            box-shadow:   2px     4px   15px  blue;
+            transition:2s ;
+        
+            }
+
+
+        .product img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 11px;
+            border: 2px solid white;
+            
+        }
+
+        .product button{
+            color:pink;
+            border:none;
+        }
+        .product h2{
+            color:white;
+        }
+
+        .product p{
+            color:white;
+        }
+        body{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/29304794/pexels-photo-29304794.jpeg" >
+        <h2>Filter Coffee</h2>
+        <p>Rs 199.00</p>
+        <button>buy now</button>
+    </div>
+
+    <div  class="product">
+        <img src="https://images.pexels.com/photos/5941881/pexels-photo-5941881.jpeg">
+        <h2>Cookies</h2>
+        <p>Rs 189.00</p>
+        <button>buy now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/8210523/pexels-photo-8210523.jpeg"  >
+        <h2>Cup Cake</h2>
+        <p> Rs 200.00</p>
+        <button>buy now</button>
+    </div>
+     <div  class="product">
+        <img src="https://images.pexels.com/photos/20205951/pexels-photo-20205951.jpeg">
+        <h2>Cold Coffee</h2>
+        <p>Rs 179.00</p>
+        <button>buy now</button>
+    </div>
+
+    
+</body>
+</html>
