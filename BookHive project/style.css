@@ -1,0 +1,52 @@
+.navbar{
+
+    background:#6b2d00;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+}
+
+/* LOGO */
+
+.logo{
+
+    color:white;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    font-family:Georgia, serif;
+}
+
+/* MENU */
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:35px;
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+
+    color:#f4d03f;
+}

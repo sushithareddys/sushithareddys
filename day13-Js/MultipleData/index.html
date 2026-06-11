@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student1="arthi"
+        var student2="sai"
+        //difficult to store many variables
+
+        //ARRAY: Multiple Data at same time and you can take data of different data types  
+        //symbol-[]
+        //Rule: index no start with 0
+
+        let students=["nida", "manisha","nikhilesh",123,true]
+        console.log(students)
+
+        //access the data arrayname[indexno]
+
+        console.log(students[2]) //nikhilesh
+        console.log(students[5]) //undefined
+        console.log(students[4]) //true
+
+        //add the data from back
+
+        students.push("john") // add the data at the last from the array
+
+        students.unshift("bob") //add the data at the start
+
+
+        //remove the data
+
+        students.pop() // deletes the last element 
+
+        students.shift() // remove the data from the front
+
+        //splice
+       // splice(index no , 0 - add the new data without removing the previous data 
+        //                  1- adds the data removing the previous data, name)
+
+
+        students.splice(3,1,"adithya")
+        console.log(students)
+
+        //object- collection of data
+        //symbol- {}
+        //rule:key(left):(right)value pair
+        //diff data types can be accepted 
+         var employee={
+            //key:value pair
+            name:"john",
+            email: "john@gmail.com",
+            salary:9357489,
+            dept:"IT",
+            loginstatus:true,
+
+         }
+         console.log(employee)
+
+         //access the value by using object name.keyname
+         console.log(employee.name)
+         console.log(employee.dept)
+
+
+
+
+
+
+    
+
+
+
+        
+        
+        
+        </script>
+</body>
+</html>
