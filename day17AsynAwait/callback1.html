@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //CallBack - To Acheive async Programming- Multiplr Task at The same time
+
+        //callback - CallBack is a function and callback is PASSED as Parameter (Inside) into ANOTHER FUNCTION
+
+        function DomHomeWork(subject , callback ){
+               console.log('Doing Homewokr for ' , subject)
+
+                callback()
+               //Calling the callback function
+        }
+        DomHomeWork("Maths", function(){
+            console.log('Home Work Done Now Going Out' , a)
+           
+        })
+
+
+
+
+    </script>
+</body>
+</html>

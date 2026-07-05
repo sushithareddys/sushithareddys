@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            overflow: auto;
+        }
+
+        .content{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To Events</h1>
+
+    <input id="myInput" placeholder="Type Scanner...">
+
+    <div id="mydiv">
+        <div class="content">Scroll Inside Me</div>
+    </div>
+
+    <script>
+        const input = document.querySelector("#myInput")
+        const div = document.querySelector("#mydiv")
+
+        //MouseOver
+        function handleMouseOver(){
+            div.style.backgroundColor = "red"
+        }
+
+        div.addEventListener('mouseover', handleMouseOver)
+
+        //Mouseout
+         function handleMouseOut(){
+            div.style.backgroundColor = "green"
+        }
+
+        div.addEventListener('mouseout', handleMouseOut)
+
+        //Scroll
+        div.addEventListener('scroll', function(){
+            console.log('Scrolled')
+        })
+
+
+        //KeyBoard
+         //.key- Help you to capture only single keyword Key
+
+        // //1. Keyup - Key Released Output
+        
+        // function handleKeyUp(e){
+        //     console.log('Key Released ' +  e.key )
+        // }
+
+        // input.addEventListener('keyup', handleKeyUp)
+
+        //1. KeyDown - Key Pressed Output
+        
+        // function handleKeyDown(e){
+        //     console.log('Key Pressed ' +  e.key )
+        // }
+
+        // input.addEventListener('keydown', handleKeyDown)
+
+
+        //Change : Change In Value in Input
+        //. value - you can store The Entire Value Which is Inside Input Tag
+
+        function handleChange(x){
+             
+            console.log('Value in Input ' , x.target.value)
+
+            
+
+        }
+        
+        input.addEventListener('change' , handleChange)
+
+
+
+
+    </script>
+</body>
+</html>

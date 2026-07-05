@@ -1,6 +1,20 @@
-.navbar{
+*{
 
-    background:#6b2d00;
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Georgia, serif;
+
+}
+
+.navbar{
 
     display:flex;
 
@@ -8,45 +22,969 @@
 
     align-items:center;
 
-    padding:15px 40px;
-}
+    background:rgb(34, 86, 82);
 
-/* LOGO */
+    padding:20px 70px;
+
+}
 
 .logo{
 
     color:white;
 
-    font-size:32px;
+    font-size:40px;
 
-    font-weight:bold;
-
-    font-family:Georgia, serif;
 }
-
-/* MENU */
 
 .nav-links{
 
-    list-style:none;
-
     display:flex;
 
+    list-style:none;
+
     gap:35px;
+
 }
 
 .nav-links a{
 
-    color:white;
-
     text-decoration:none;
 
-    font-size:18px;
+    color:white;
+
+    font-size:22px;
 
     font-weight:bold;
+
 }
 
 .nav-links a:hover{
 
-    color:#f4d03f;
+    color:#ffd27f;
+
+}
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:90px 80px;
+
+    background:white;
+
+}
+
+.hero-text{
+
+    width:50%;
+
+}
+
+.hero-text h1{
+
+    color:rgb(50, 122, 115);
+
+    font-size:70px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-text p{
+
+    font-size:25px;
+
+    color:black;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.hero-btn{
+
+    text-decoration:none;
+
+    background:rgb(41, 100, 94);
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.hero-btn:hover{
+
+    background:#eeeeee;
+
+}
+
+.hero-image{
+
+    width:45%;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+}
+
+
+
+
+
+footer{
+
+    background:rgb(38, 77, 73);;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:18px;
+
+}
+
+
+/*books.html*/
+
+
+.book-heading{
+
+    text-align:center;
+
+    padding:60px;
+
+    background:#f7efe4;
+
+}
+
+.book-heading h1{
+
+    font-size:50px;
+
+    color:rgb(42, 116, 108);
+
+}
+
+.book-heading p{
+
+    font-size:22px;
+
+    color:#666;
+
+    margin-top:15px;
+
+}
+
+
+
+
+.books-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+
+    padding:70px;
+
+    background:#f7efe4;
+
+}
+
+
+
+
+.book-card{
+
+    width:280px;
+
+    background:white;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    padding:25px;
+
+    box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+.book-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+.book-card img{
+
+    width:200px;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+
+/* TITLE */
+
+.book-card h3{
+
+    color:rgb(74, 131, 125);
+
+    margin-top:20px;
+
+    font-size:28px;
+
+}
+
+
+/* AUTHOR */
+
+.book-card p{
+
+    margin:15px 0;
+
+    color:#666;
+
+    font-size:20px;
+
+}
+
+
+/* PRICE */
+
+.book-card h2{
+
+    color:#222;
+
+    margin-bottom:20px;
+
+}
+
+
+/* BUTTON */
+
+.book-card button{
+
+    width:100%;
+
+    padding:14px;
+
+    background:rgb(54, 96, 92);
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.book-card button:hover{
+
+    background:#8b4513;
+
+}
+
+/*cart.html*/
+
+
+.cart-page{
+
+    background:whitesmoke;
+
+    padding:80px;
+
+}
+
+.cart-box{
+
+    width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.cart-box img{
+
+    width:180px;
+
+    margin-bottom:25px;
+
+}
+
+.cart-box h1{
+
+    font-size:45px;
+
+    color:rgb(65, 133, 126);
+
+    margin-bottom:20px;
+
+}
+
+.cart-box p{
+
+    font-size:22px;
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+}
+
+.shop-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:rgb(53, 101, 96);
+
+    color:white;
+
+    padding:16px 40px;
+
+    border-radius:8px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+.shop-btn:hover{
+
+    background:rgb(82, 154, 147);
+
+}
+
+
+
+
+
+.categories{
+
+    background:#ffffff;
+
+    text-align:center;
+
+    padding:70px;
+
+}
+
+.categories h2{
+
+    font-size:40px;
+
+    color:rgb(81, 130, 125);
+
+    margin-bottom:40px;
+
+}
+
+.category-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+.category{
+
+    background:rgb(79, 140, 134);
+
+    color:white;
+
+    padding:20px 35px;
+
+    border-radius:10px;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.category:hover{
+
+    background:rgb(70, 124, 118);
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.contact{
+
+    background:white;
+
+    padding:70px;
+
+}
+
+.contact h1{
+
+    text-align:center;
+
+    font-size:55px;
+
+    color:rgb(71, 123, 117);
+
+}
+
+.contact>p{
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:#666;
+
+    margin-top:15px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+
+.contact-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-bottom:60px;
+
+}
+
+.info-box{
+
+    width:300px;
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.info-box h2{
+
+    color:rgb(43, 85, 81);
+
+    margin-bottom:15px;
+
+}
+
+.info-box p{
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+
+
+
+.contact-form{
+
+    width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.contact-form h2{
+
+    text-align:center;
+
+    color:rgb(88, 167, 159);
+
+    margin-bottom:30px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+}
+
+.contact-form textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+.contact-form button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:rgb(58, 118, 112);
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+.contact-form button:hover{
+
+    background:rgb(99, 188, 179);
+
+}
+
+/*login part*/
+
+
+.login-container{
+
+    display:flex;
+
+    min-height:90vh;
+
+}
+
+/* LEFT SIDE */
+
+.login-left{
+
+    width:50%;
+
+    background:white;
+
+    color:rgb(52, 106, 101);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px;
+
+}
+
+.login-left img{
+
+    width:500px;
+
+    border-radius:20px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.login-left h1{
+
+    font-size:55px;
+
+    margin-bottom:40px;
+
+}
+
+.login-left p{
+
+    font-size:22px;
+
+    text-align:center;
+
+    line-height:1.7;
+
+}
+
+/* RIGHT SIDE */
+
+.login-right{
+
+    width:50%;
+
+    background:rgb(116, 200, 191);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* LOGIN BOX */
+
+.login-box{
+
+    width:420px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.login-box h2{
+
+    text-align:center;
+
+    color:black;
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.login-box label{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+    color:rgb(67, 118, 112);
+
+}
+
+.login-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:8px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+}
+
+.login-box button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:rgb(62, 143, 135);
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+}
+
+.login-box button:hover{
+
+    background:rgb(62, 132, 125);
+
+}
+
+/* EXTRA LINKS */
+
+.extra-links{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:15px;
+
+    font-size:15px;
+
+}
+
+.extra-links a{
+
+    text-decoration:none;
+
+    color:rgb(43, 99, 93);
+
+}
+
+.signup-link{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+.signup-link a{
+
+    color:rgb(66, 144, 136);
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.signup-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+        SIGNUP PAGE
+=========================== */
+
+.signup-page{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:70px;
+
+    background-image:url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.signup-box{
+
+    width:470px;
+
+    background:rgba(255,255,255,0.95);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+.signup-box h1{
+
+    text-align:center;
+
+    color:rgb(67, 132, 125);
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.signup-box p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.signup-box label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    color:rgb(83, 156, 149);
+
+    font-weight:bold;
+
+}
+
+.signup-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.signup-box button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    background:rgb(64, 143, 135);
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.signup-box button:hover{
+
+    background:rgb(78, 137, 131);
+
+}
+
+.login-link{
+
+    margin-top:25px;
+
+}
+
+.login-link a{
+
+    color:rgb(75, 142, 135);
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.login-link a:hover{
+
+    text-decoration:underline;
+
 }

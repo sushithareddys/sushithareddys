@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM - Helps Us Connect HTML with JavaScript -->
+
+    <p id="myp">Hello Good Evening</p>
+
+    <button id="btn">Login</button>
+
+    <div class="myc">This is Div Shopping - 0</div>
+    <div class="myc">This is Div Gaming   - 1</div>
+
+
+    <p>Hello Good Morning</p>
+    <p>Hello Good Afternoon</p>
+
+
+    <div class="xyz">Amaozn - Ecommerce</div>
+
+    <div class="xyz">Netflix - OTT Platform</div>
+
+
+    <script>
+     //Select HTML Tag By Using Selecting Method
+     //Element - Tag
+     //document - Webpage
+
+     //1.id- getElementById("Id Name")
+
+     let ele  =   document.getElementById("myp")   //Selected The Tag with IdName in Js
+     console.log(ele)
+
+     const ele1 = document.getElementById("btn")
+     console.log(ele1)
+
+     // .textContent - It will The Content of The Tag
+     console.log(ele1.textContent)
+
+
+     //2.class - getElementsByClass("CLass Name")
+
+     const ele2  =  document.getElementsByClassName("myc")
+
+     console.log(ele2)
+     console.log(ele2[1])
+     console.log(ele2[1].textContent)
+
+     //3.TagName - getELementsByTagName("TagName")
+
+     const ele3 = document.getElementsByTagName("p")
+     console.log(ele3)
+
+     console.log(ele3[1])
+
+     console.log(ele3[1].textContent)
+
+
+     //4. querySelector("")  - Follows The CSS Selector Rule -   #idName , .class , TagName
+      // Will Only Select The First Element/Tag
+
+     const ele4 = document.querySelector(".xyz")
+
+     console.log(ele4)
+
+     //5. querySelectAll("")  Follows The CSS Selector Rule -   #idName , .class , TagName
+     // Will Slect All The Elements
+      const ele5 = document.querySelectorAll(".xyz")
+
+     console.log(ele5)
+
+
+
+
+
+
+
+
+    </script>    
+
+  
+</body>
+</html>

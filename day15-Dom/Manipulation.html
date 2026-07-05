@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Hii Everyone</p>
+
+    <button id="btn">Login</button>
+
+
+   <div id="myDiv">This is Div</div>
+
+   <p id="newp">This is Old Para</p>
+
+   <div id="container">
+
+   </div>
+
+   <ul id="myList">
+
+   </ul>
+
+    <script>
+   // Select The HTML Element/Tag
+
+   // 1. Update The Text Content
+
+     const paragraph  =   document.getElementById("text")
+
+     paragraph.textContent  = "Hello Everyone Welcome To DOM Magic"
+
+     console.log(paragraph)
+
+
+     const button = document.getElementById("btn")
+
+     button.textContent = "Logout"
+
+     
+     //innerHTML  = Help us To Update or Change Content of Tag
+     const div = document.getElementById("myDiv")
+
+     console.log(div)
+
+
+    //  div.innerHTML = "<h1> This is Now Heading </h1>"
+
+
+    div.innerHTML = `
+    <p id="myp">Hello This <mark>Updated</mark></p>
+    <button>Smile</button>
+    <em>Happ Weeken</em>
+            `
+
+
+    const ele3 = document.getElementById("newp")
+
+    // .style.PropertyName
+
+    ele3.style.color = "red"
+    ele3.style.backgroundColor = "black"
+    ele3.style.textAlign = "center"
+    ele3.textContent = "Lets Take a short Break"
+
+
+ 
+
+    //create Element(TagName)
+
+    const para =  document.createElement("p")
+
+    //Add Text 
+    para.innerText = "Hello i am created using Javascript"
+
+    document.getElementById("container").appendChild(para)
+
+
+
+  const li =  document.createElement("li")
+
+  li.innerText = "Apple"
+
+  document.getElementById("myList").appendChild(li)
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

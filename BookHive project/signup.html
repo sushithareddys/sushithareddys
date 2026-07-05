@@ -1,40 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Signup</title>
+
+<head>
+
+    <title>BookHive | Sign Up</title>
+
     <link rel="stylesheet" href="style.css">
-    </head>
-  <body>
-    <header>
-      <h1>📚 Books Section</h1>
 
-      <nav>
-        <a href="index.html">Home</a> | <a href="books.html">Books</a> |
-        <a href="login.html">Login</a> |
-        <a href="signup.html">Signup</a>
-      </nav>
-    </header>
+</head>
 
-    <h1>Signup Account</h1>
+<body>
 
-    <form>
-      
+<header>
 
-      <label>full name:</label><br/>
-      <input type="full name" required/><br/><br/>
+    <nav class="navbar">
 
-      <label>Email:</label><br />
-      <input type="email" required /><br /><br />
+        <h1 class="logo">📚 BookHive</h1>
 
-      <label>Password:</label><br />
-      <input type="password" required /><br /><br />
+        <ul class="nav-links">
+
+            <li><a href="home.html">Home</a></li>
+
+            <li><a href="books.html">Books</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="signup.html">Signup</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
 
 
-      <input type="submit" value="Signup" />
-    </form>
+<section class="signup-page">
 
-    <footer>
-      <p>© 2026 BookVerse | All Rights Reserved</p>
-    </footer>
-  </body>
+    <div class="signup-box">
+
+        <h1>Create Account</h1>
+
+        <p>Join BookHive and discover your next favourite book.</p>
+
+        <form>
+
+            <label>Full Name</label>
+
+            <input type="text" placeholder="Enter your full name">
+
+            <label>Email</label>
+
+            <input type="email" placeholder="Enter your email">
+
+            <label>Password</label>
+
+            <input type="password" placeholder="Create a password">
+
+            <label>Confirm Password</label>
+
+            <input type="password" placeholder="Confirm your password">
+
+            <button type="submit">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <p class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">Login</a>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 BookHive | All Rights Reserved</p>
+
+</footer>
+
+</body>
+
 </html>
